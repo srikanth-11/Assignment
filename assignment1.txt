@@ -1,0 +1,55 @@
+Question:1
+     Difference between HTTP1.1 vs HTTP2
+Answer:
+     1.HTTP2 is binary, where as HTTP1 is textual.
+     2.HTTP2 is fully multiplexed, instead of ordered and           blocking.
+     3.HTTP2 can, therefore, use one connection for               parallelism.
+     4.HTP2 uses header compression to reduce overhead.
+     5.HTTP2 allows servers to “push” responses proactively         into client caches.
+     6.HTTP2 is secured by default.
+
+
+Question:2
+    HISTORY OF HTTP
+Answer:
+    HTTP/0.9
+    1.Year of release 1991.
+    2.It is extremely simple requests consist of a single          line and start with the only possible method GET             followed by the path to the resource.
+    3.There were no status or error messages.
+    HTTP/1.0
+    1.Year of release is 1996
+    2.Version information is now sent within each request.
+    3.A status code is also sent at the beginning of the           response.
+    4.The HTTP headers has been introduced.
+    5.The transfer of other documents than plain HTML files        has been added.
+    HTTP/1.1
+    1.Year of release is 1997
+    2.A connection can be reused.
+    3.Pipelining has been added, allowing to send a second         request before the answer for the first one is fully         transmitted.
+    4.Cache control mechanism have been introduced.
+    HTTP/2
+    1.Year of release is 2015
+    2.It is a binary protocol rather than text.
+    3.It is a multiplexed protocol. Parallel requests can be       handled over the same connection, removing the order         and blocking issues of the HTTTP/1.1 protocol.
+    4.It compresses headers. As these are often similar            among a set of requests, this removes duplication and        overhead of data transmitted.
+
+
+Question:3
+    Difference between Browser JS(console) vs Nodejs
+Answer:
+    1.In browser “window” is a predefined global object            which has functions and attributes, where as Nodejs          doesn’t have it.
+    2.In browser “location” is another predefined object,          where as Nodejs doesn’t have it.
+    3.In browser “require” is not predefined object, where         as Nodejs has it.
+    4.In browser module is not required, where as in Nodejs        you have to keep your code inside the module.
+    5.In browser “document” is a predefined object, where as       Nodejs doesn’t have it.
+
+Question:4
+    what happens when you type a URL in the address bar in       the browser
+Answer:
+    1.The browser looks up the IP address for the domain           name via DNS.
+    2.The browser sends a HTTP request to the server.
+    3.The server sends back a HTTP response.
+    4.The browser begins rendering the HTML.
+    5.The browser sends requests for additional objects            embedded in HTML (images, CSS, JavaScript) 
+    6.Once the page is loaded, the browser sends further           requests as needed.
+
